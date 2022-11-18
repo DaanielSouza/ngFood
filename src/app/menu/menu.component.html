@@ -1,0 +1,24 @@
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="title">Cardápio</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="secondRow">
+      <mat-icon [matBadge]="cart.length" matBadgeColor="warn">shopping_cart</mat-icon>
+      <span (click)="redirectToCart()" class="showOrder">VER PEDIDO</span>
+      <span>{{total | currency}}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>
+<div class="menu">
+  <div class="menu__category" *ngFor="let cat of categorys">
+    <h4>{{cat}}</h4>
+    <div class="menu__category__section" *ngFor="let item of menu" (click)="addFood(item)"
+      [ngClass]="{'deletar':item.category != cat}">
+      <ng-container *ngIf="item.category == cat">
+        <div class="menu-item menu__category__productName">{{item.name}}</div>
+        <div class="menu-item menu__category__productPrice">{{ item.price | currency }}</div>
+      </ng-container>
+    </div>
+  </div>
+</div>

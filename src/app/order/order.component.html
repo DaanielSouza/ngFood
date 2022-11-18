@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <span class="">Pedido</span>
+</mat-toolbar>
+<main>
+  <div *ngFor="let item of cart" class="itens">
+    <div class="itens__productName">{{ item.food.name }}</div>
+    <div class="itens__price">{{ item.amount + " x "}} {{item.food.price | currency}}</div>
+  </div>
+  <div class="total" *ngIf="total > 0">
+    <div class="total__text">Total</div>
+    <div class="total__price">{{ total | currency }}</div>
+  </div>
+  <div color="primary" class="sectionButtons">
+    <div>
+      <button mat-raised-button (click)="redirectToMenu()">Incluir mais itens</button>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" backgroundColor="primary" (click)="cleanService()"
+        *ngIf="total > 0">Limpar</button>
+    </div>
+    <div>
+      <button mat-raised-button (click)="finishOrder()" *ngIf="total > 0">Concluir</button>
+    </div>
+  </div>
+</main>

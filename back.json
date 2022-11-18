@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "X-Burguer",
+      "price": 10.54,
+      "category": "meatS"
+    },
+    {
+      "id": 2,
+      "name": "X-Tudo",
+      "price": 10.54,
+      "category": "meatS"
+    },
+    {
+      "id": 3,
+      "name": "X-Bacon",
+      "price": 10.54,
+      "category": "meatS"
+    },
+    {
+      "id": 4,
+      "name": "X-Egg",
+      "price": 10.54,
+      "category": "meatS"
+    },
+    {
+      "id": 5,
+      "name": "X-EggFrango",
+      "price": 10.54,
+      "category": "chickenS"
+    },
+    {
+      "id": 6,
+      "name": "X-BaconFrango",
+      "price": 10.54,
+      "category": "chickenS"
+    },
+    {
+      "id": 7,
+      "name": "X-TudoFrango",
+      "price": 10.54,
+      "category": "chickenS"
+    },
+    {
+      "id": 8,
+      "name": "Acai 300ml",
+      "price": 10.54,
+      "category": "acai"
+    },
+    {
+      "id": 9,
+      "name": "Acai 500ml",
+      "price": 10.54,
+      "category": "acai"
+    },
+    {
+      "id": 10,
+      "name": "Acai 700ml",
+      "price": 10.54,
+      "category": "acai"
+    }
+  ]
+}
